@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <title>Execícios HTML</title>
+    <style>
+        #conteudo { 
+            padding: 30px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Execícios Html
+    </h1>
+    <nav>
+        <a href="exercicios/teste.html">00 - Teste</a> |
+        <a href="exercicios/tagsTexto1.html">01 - Tags Texto</a> |
+        <a href="exercicios/tagsTexto2.html">02 - Tags Texto #2</a> |
+        <a href="exercicios/listas.html">03 - Listas</a> |
+        <a href="exercicios/listasAninhadas.html">04 - Listas Aninhadas</a> |
+        <a href="exercicios/links.html">05 - Links</a> |
+        <a href="exercicios/tabelas.html">06 - tabelas</a> |
+        <a href="exercicios/form/form.html">07 - Formulario</a> |
+        <a href="exercicios/imagens.html">08 - Imagens</a> |
+        <a href="exercicios/slider/slider.html">09 - Slider My</a> |
+        <a href="exercicios/slider/sliderC.html">09 - Slider C</a> |
+        <a href="exercicios/videos/videos.html">10 - Videos</a> |
+        <a href="exercicios/tagsNaoVisuais.html">11 - Tags Não Visuais</a> |
+        
+    </nav>
+    <section id="conteudo"></section>
+    <footer>
+        Curso Web Moderno
+    </footer>
+    <script>
+        document.querySelectorAll("a").forEach( link => {
+            const conteudo = document.getElementById('conteudo')
+
+            link.onclick = function(e){
+                e.preventDefault()
+                fetch(link.href)
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+            }
+        })
+    </script>
+</body>
+</html>

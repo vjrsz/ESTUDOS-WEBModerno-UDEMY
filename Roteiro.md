@@ -5,9 +5,9 @@
   - [X] Seção 2 - Configuração de Ambiente.
 
 ## HTML E CSS:
-  - [X] Seção 11 - Conceitos sobre Web
-  - [X] Seção 12 - HTML
-  - [X] Seção 13 - CSS
+  - [X] Seção 12 - Conceitos sobre Web
+  - [X] Seção 13 - HTML
+  - [ ] Seção 14 - CSS
 
 ## JAVASCRIPT:
   - [ ] Seção 4 - Fundamentos

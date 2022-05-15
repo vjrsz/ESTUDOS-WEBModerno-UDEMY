@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: "Oswald";
+            color: #fff;
+            box-sizing: border-box;
+        }
+        .cabecalho{
+            background-color: #222;
+            padding: 10px 20px;
+            border-bottom: solid 5px dodgerblue;
+        }
+        .menu-toggle{ 
+            display: inline-block; 
+            float: right; 
+            padding: 10px 15px;
+        }
+        .logo { display: inline-block; height: 60px; padding: 15px;}
+        .logo img{ height: 100%; }
+        .menu{ display: inline-block; margin: 20px 0px; vertical-align: top;}
+        .menu li{ display: inline-block; }
+        .menu a { padding: 3vh 1vw; }
+        .menu li a:hover, .active{color: #000; background-color: #bbb }
+
+        .autenticacao{ display: inline-block; margin: 20px 0px; vertical-align: top; float: right}
+        .botao{ text-decoration: none; padding: 10px 20px }
+        .destaque{ background-color: red; border-radius: 50px; 
+        }
+        @media (min-width: 579px){
+            .menu-toggle{
+                display: none;
+            }
+        }
+        @media (max-width: 580px){
+            .menu{
+                display: none;
+            }
+        }
+        @media (max-width: 670px){
+            .autenticacao{
+                display: none;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio" wm-hash>
+                <img src="http://files.cod3r.com.br/curso-web/logo.png" alt="Logo" />
+            </a>
+        </div>
+        <button class="menu-toggle">
+            <i class="fa fa-lg fa-bars"></i>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#inicio" class="botao" wm-hash>Início</a>
+                </li>
+                <li>
+                    <a href="#cursos" class="botao" wm-hash>Cursos</a>
+                </li>
+                <li>
+                    <a href="#sobre" class="botao" wm-hash>Sobre</a>
+                </li>
+                <li>
+                    <a href="#contato" class="botao" wm-hash>Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <aside class="autenticacao">
+            <a href="#login" class="botao">Login</a>
+            <a href="#registar" class="botao destaque">Registrar</a>
+        </aside>
+    </header>
+
+    <script>
+        /*hashAtual = null
+        document.querySelectorAll('[wm-hash]').forEach(hash => {
+            hash.onclick = function(e){
+                document.querySelectorAll('.menu [wm-hash]').forEach(links => {
+                    console.log(links)
+                    if(links.href == hash.href) {
+                        if(hashAtual != null) hashAtual.classList.remove('active')
+                        hashAtual = links
+                        hashAtual.classList.add('active')
+                    }
+                })
+            }
+        })*/
+        window.onhashchange = function(e){
+            const oldURL = e.oldURL.split('#')[1]
+            const newURL = e.newURL.split('#')[1]
+
+            const oldMenu = document.querySelector(`.menu [href='#${oldURL}']`)
+            const newMenu = document.querySelector(`.menu [href='#${newURL}']`)
+            
+            oldMenu && oldMenu.classList.remove('active')
+            newMenu && newMenu.classList.add('active')
+        }
+    </script>
+</body>
+
+</html>
