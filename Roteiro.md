@@ -7,13 +7,13 @@
 ## HTML E CSS:
   - [X] Seção 12 - Conceitos sobre Web
   - [X] Seção 13 - HTML
-  - [ ] Seção 14 - CSS
+  - [X] Seção 14 - CSS
 
 ## JAVASCRIPT:
-  - [ ] Seção 4 - Fundamentos
-  - [ ] Seção 5 - Estruturas de controle
-  - [ ] Seção 6 - Função
-  - [ ] Seção 7 - Objeto
+  - [X] Seção 4 - Fundamentos
+  - [X] Seção 5 - Estruturas de controle
+  - [X] Seção 6 - Função
+  - [X] Seção 7 - Objeto
   - [ ] Seção 8 - Array
   - [ ] Seção 9 - Lista de Exercícios de Javascript  
 Quando estiver confortável com javascript, sugiro ir para a **Seção 15 - Integrando HTML, CSS e JS**
