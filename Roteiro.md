@@ -14,13 +14,13 @@
   - [X] Seção 5 - Estruturas de controle
   - [X] Seção 6 - Função
   - [X] Seção 7 - Objeto
-  - [ ] Seção 8 - Array
-  - [ ] Seção 9 - Lista de Exercícios de Javascript  
+  - [X] Seção 8 - Array
+  - [X] Seção 9 - Lista de Exercícios de Javascript  
 Quando estiver confortável com javascript, sugiro ir para a **Seção 15 - Integrando HTML, CSS e JS**
 
 ## BOOTSTRAP E JQUERY
-  - [ ] Seção 19 - JQuery
-  - [ ] Seção 20 - Bootstrap  
+  - [X] Seção 19 - JQuery
+  - [X] Seção 20 - Bootstrap  
 **SE VOCÊ CHEGOU ATÉ AQUI, MEUS PARABÉNS! VOCÊ JÁ PODE TRABALHAR DANDO MANUTENÇÃO EM MUITOS, REPITO: MUITOS SITES E SISTEMAS "LEGADOS".**
 
 ## "Javascript Moderno"
